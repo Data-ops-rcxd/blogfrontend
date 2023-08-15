@@ -1,0 +1,68 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html header {
+  background: #444;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+}
+html header div:first-child {
+  display: flex;
+}
+html header div .logo {
+  padding: 0 35px;
+  border-right: 2 px solid #22bce0;
+  margin: 10px 0;
+}
+html header div .logo img {
+  height: 100px;
+}
+html header div .encabezado {
+  margin: 10px 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html header div .encabezado .titulo,
+html header div .encabezado .clase.fuente {
+  color: #fff;
+}
+html header div .encabezado .titulo h2 {
+  font-size: 18px;
+}
+html header div .encabezado .clase {
+  margin-top: 5px;
+}
+html header div .encabezado .clase h3 {
+  font-size: 14px;
+  font-style: italic;
+  color: #22bce0;
+  font-weight: bold;
+}
+html header div .encabezado .fuente {
+  display: flex;
+  margin-top: 5px;
+  align-items: first baseline;
+}
+html header div .encabezado .fuente p {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #dd4f24;
+}
+html header div .encabezado .fuente p:first-child {
+  font-size: 12px;
+}
+html header div .encabezado .fuente p:last-child {
+  font-size: 20px;
+}
+html header div .avatar-publicar {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+html header div .avatar-publicar .avatar {
+  display: flex;
+  align-items: center;
+}
