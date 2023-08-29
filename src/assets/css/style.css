@@ -12,7 +12,7 @@ html header div:first-child {
 }
 html header div .logo {
   padding: 0 35px;
-  border-right: 2 px solid #22bce0;
+  border-right: 2px solid #22bce0;
   margin: 10px 0;
 }
 html header div .logo img {
@@ -26,7 +26,8 @@ html header div .encabezado {
   justify-content: center;
 }
 html header div .encabezado .titulo,
-html header div .encabezado .clase.fuente {
+html header div .encabezado .clase,
+html header div .encabezado .fuente {
   color: #fff;
 }
 html header div .encabezado .titulo h2 {
@@ -57,12 +58,95 @@ html header div .encabezado .fuente p:first-child {
 html header div .encabezado .fuente p:last-child {
   font-size: 20px;
 }
-html header div .avatar-publicar {
+html header .avatar-publicar {
   display: flex;
   align-items: center;
   margin-right: 30px;
 }
-html header div .avatar-publicar .avatar {
+html header .avatar-publicar .avatar {
   display: flex;
   align-items: center;
+}
+html header .avatar-publicar .avatar .img-avatar {
+  margin-right: -5px;
+  z-index: 1;
+}
+html header .avatar-publicar .avatar .img-avatar img {
+  height: 50px;
+  border-radius: 50%;
+}
+html header .avatar-publicar .avatar .menu {
+  background: #dd4f24;
+  height: fit-content;
+  padding: 5px 5px 5px 10px;
+}
+html header .avatar-publicar .avatar .menu p {
+  color: #fff;
+}
+html header .avatar-publicar .btn {
+  background: #dd4f24;
+  padding: 5px 30px;
+  margin-right: -5px;
+}
+html header .avatar-publicar .btn p {
+  color: #fff;
+  font-style: italic;
+}
+html nav {
+  background: #22bce0;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+}
+html nav ul {
+  display: flex;
+}
+html nav ul li {
+  margin-right: 35px;
+  padding: 15px;
+}
+html nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+html nav ul li:hover {
+  background: rgba(0,0,0,0.1);
+}
+html section article {
+  width: 45%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
+}
+html section article .contenido {
+  border-bottom: 4px solid #22bce0;
+  display: flex;
+}
+html section article .estadistica {
+  display: flex;
+  justify-content: space-between;
+}
+html footer {
+  background: #dd4f24;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+html footer div {
+  display: flex;
+  justify-content: center;
+}
+html footer div p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  color: rgba(255,255,255,0.5);
+  font-weight: bold;
+}
+html footer div p span {
+  font-weight: normal;
+}
+html footer div p span:before,
+html footer div p span:after {
+  content: "-";
 }
