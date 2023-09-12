@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'icon';
+  src: url("../fonts/icons/icomoon.eot?x4y5m7");
+  src: url("../fonts/icons/icomoon.eot?x4y5m7#iefix") format('embedded-opentype'), url("../fonts/icons/icomoon.ttf?x4y5m7") format('truetype'), url("../fonts/icons/icomoon.woff?x4y5m7") format('woff'), url("../fonts/icons/icomoon.svg?x4y5m7#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 html {
   font-family: Arial, Helvetica, sans-serif;
+}
+html body {
+  background: #e8e8e8;
 }
 html header {
   background: #444;
@@ -83,6 +94,12 @@ html header .avatar-publicar .avatar .menu {
 html header .avatar-publicar .avatar .menu p {
   color: #fff;
 }
+html header .avatar-publicar .avatar .menu p span::after {
+  font-family: "icon";
+  content: "\ea1c";
+  display: inline-block;
+  transform: rotate(90deg);
+}
 html header .avatar-publicar .btn {
   background: #dd4f24;
   padding: 5px 30px;
@@ -91,6 +108,18 @@ html header .avatar-publicar .btn {
 html header .avatar-publicar .btn p {
   color: #fff;
   font-style: italic;
+  position: relative;
+}
+html header .avatar-publicar .btn p span {
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
+html header .avatar-publicar .btn p span::before {
+  font-family: "icon";
+  content: "\e908";
+  font-size: 40px;
+  color: #fff;
 }
 html nav {
   background: #22bce0;
@@ -111,19 +140,91 @@ html nav ul li a {
 html nav ul li:hover {
   background: rgba(0,0,0,0.1);
 }
+html section {
+  display: flex;
+  flex-wrap: wrap;
+}
 html section article {
-  width: 45%;
+  margin: 10px auto;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
+  flex-basis: 45%;
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.75);
+  background: #fff;
 }
 html section article .contenido {
   border-bottom: 4px solid #22bce0;
   display: flex;
 }
+html section article .contenido .portada img {
+  height: 200px;
+}
+html section article .contenido .contenidohumoristico {
+  margin: 0 15px;
+  flex-grow: 1;
+}
+html section article .contenido .contenidohumoristico .titulo {
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 10px;
+}
+html section article .contenido .contenidohumoristico .autor {
+  margin-top: 5px;
+}
+html section article .contenido .contenidohumoristico .autor span {
+  color: #dd4f24;
+  text-decoration: underline;
+}
+html section article .contenido .contenidohumoristico .tag-tiempo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+html section article .contenido .contenidohumoristico .tag-tiempo .tag p {
+  background: #22bce0;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 16px;
+}
+html section article .contenido .contenidohumoristico .tag-tiempo .tiempo p span {
+  font-weight: bold;
+}
 html section article .estadistica {
   display: flex;
   justify-content: space-between;
+  padding: 10px 10px;
+}
+html section article .estadistica .score {
+  margin: 0 15px;
+}
+html section article .estadistica .score p .up::before {
+  font-family: "icon";
+  content: "\ea1c";
+  color: #008000;
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+html section article .estadistica .score p .down::before {
+  font-family: "icon";
+  content: "\ea1c";
+  color: #f00;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+html section article .estadistica .stars p .puntaje {
+  background: #444;
+  padding: 3px 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+html section article .estadistica .stars p .ico {
+  margin-left: 10px;
+}
+html section article .estadistica .stars p .ico::before {
+  font-family: "icon";
+  content: "\e9d8";
+  color: #fcb92d;
 }
 html footer {
   background: #dd4f24;
